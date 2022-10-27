@@ -52,20 +52,6 @@ header {
   bottom: 10%;
 }
 
-.see-project {
-  height: 24px;
-  width: 101px;
-  font-family: Inter, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
 #illustration-img {
   position: absolute;
   right: 0;
@@ -308,6 +294,14 @@ section p {
   align-items: center;
   width: 100%;
   justify-content: center;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
 }
 
 #project-btn {
@@ -319,22 +313,26 @@ section p {
   padding: 12px;
   background: #ff6b00;
   margin-left: 2rem;
-}
-
-#project-btn-text {
-  height: 24px;
-  width: 100px;
+  border: none;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  display: flex;
-  align-items: center;
   color: #fff;
-  margin: 0;
-  padding: 0;
+}
+
+#project-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.project-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .placehokder-img {
@@ -494,23 +492,20 @@ section p {
   align-items: center;
   order: 2;
   margin-left: 1rem;
-}
-
-#get-resume-para {
+  border: none;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  height: 24px;
-  width: 137px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 0%;
   color: white;
-  padding: 0;
+}
+
+#get-resume:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 #languages {
@@ -844,6 +839,8 @@ body {
 #form {
   padding-bottom: 12rem;
   border-bottom: 1px solid #dfe1e6;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .email {
@@ -879,6 +876,7 @@ body {
   margin-left: 2rem;
   background: #fbf8f7;
   border: none;
+  padding: 12px;
 }
 
 #Get-in-touch {
@@ -892,26 +890,23 @@ body {
   background: #ff6b00;
   margin-top: 1rem;
   margin-left: 6rem;
-}
-
-#desktop-main {
-  display: none;
-}
-
-#Get-in-touch-phrase {
-  height: 24px;
-  width: 107px;
+  border: none;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: center;
-  display: flex;
-  align-items: center;
   color: #fff;
-  padding: 0;
-  margin: 0;
+}
+
+#Get-in-touch:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#desktop-main {
+  display: none;
 }
 
 #footer {
