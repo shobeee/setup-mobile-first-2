@@ -64,9 +64,6 @@ header {
   display: flex;
   align-items: center;
   color: #fff;
-  padding: 0;
-  padding-top: 8px;
-  padding-left: 5rem;
 }
 
 #illustration-img {
@@ -80,7 +77,6 @@ header {
   margin-left: 2rem;
   margin-right: 2rem;
   background: rgba(255, 255, 255, 1);
-  margin-top: 12rem;
 }
 
 section h1 {
@@ -302,6 +298,7 @@ section p {
 }
 
 .project-btn {
+  display: flex;
   height: 48px;
   left: 0;
   top: 0;
@@ -309,6 +306,8 @@ section p {
   background: #ff6b00;
   padding: 0;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 #project-btn {
@@ -444,11 +443,19 @@ section p {
 }
 
 #about-me {
-  position: relative;
-  margin-top: 6rem;
-  background: #1c1a19;
-  background-size: cover;
+  background-image: url(images/illustration-about-me-mobile.svg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  margin-top: 8rem;
+  background-color: #1c1a19;
   width: 100%;
+  background-position: right 0% bottom 0%;
+  padding-bottom: 12rem;
+}
+
+#lang-section {
+  background: #1c1a19;
+  padding: 0 22px 6rem;
 }
 
 #about-me-head {
