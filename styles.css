@@ -27,6 +27,8 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   height: 92px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #menu {
@@ -44,6 +46,7 @@ header {
   background-color: black;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #home-id {
@@ -179,6 +182,9 @@ section p {
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
 }
 
 #paragraph {
@@ -347,6 +353,9 @@ section p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
 }
 
 #placeholder-img-head {
@@ -449,11 +458,16 @@ section p {
   width: 100%;
   background-position: right 0% bottom 0%;
   padding-bottom: 12rem;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #lang-section {
   background: #1c1a19;
   padding: 0 22px 6rem;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
 }
 
 #about-me-head {
@@ -839,8 +853,8 @@ body {
 #form {
   padding-bottom: 12rem;
   border-bottom: 1px solid #dfe1e6;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .email {
