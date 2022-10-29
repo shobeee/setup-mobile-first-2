@@ -20,7 +20,6 @@ h1 {
 }
 
 header {
-  width: 100%;
   background: #3c3a39;
   display: flex;
   flex-direction: row;
@@ -42,11 +41,10 @@ header {
   background-position: right 5% bottom 0%;
   background-size: 150px;
   background-repeat: no-repeat;
-  padding: 120px 24px 120px 24px;
+  padding: 120px 24px 145px 24px;
   background-color: black;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 #home-id {
@@ -75,8 +73,7 @@ section h1 {
   line-height: 64px;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
-  margin-bottom: 5px;
-  padding-right: 3rem;
+  margin: 0;
   color: #ff6b00;
 }
 
@@ -99,7 +96,7 @@ section h2 {
   letter-spacing: 0;
   text-align: left;
   color: #fff5e1;
-  margin-left: 20px;
+  margin: 12 0 0 0;
 }
 
 section p {
@@ -110,8 +107,8 @@ section p {
   letter-spacing: 0;
   text-align: left;
   color: #fff;
-  margin-left: 20px;
   padding-right: 40px;
+  margin: 12 0 0 0;
 }
 
 #social-media-black {
@@ -130,7 +127,9 @@ section p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-left: 1.2rem;
+  margin-left: 0;
+  margin-top: 22px;
+  padding-left: 0;
 }
 
 #github {
@@ -140,8 +139,6 @@ section p {
 }
 
 #recent-work-heading {
-  width: 314px;
-  height: 83px;
   font-family: Crete Round, sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -153,15 +150,12 @@ section p {
   border-bottom: 1px solid black;
   padding-bottom: 30px;
   display: flex;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 #img-placeholder {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
-  padding-left: 2rem;
 }
 
 #Multi-post {
@@ -172,24 +166,21 @@ section p {
   letter-spacing: 0;
   text-align: left;
   color: #091e42;
-  margin-left: 2rem;
+  margin-left: 0;
   margin-top: 1rem;
   margin-bottom: 0;
 }
 
 #home-2 {
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   padding-top: 6rem;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 100%;
 }
 
 #paragraph {
-  height: 147px;
-  width: 327px;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -197,19 +188,16 @@ section p {
   letter-spacing: 0;
   text-align: left;
   display: flex;
-  margin-left: 2rem;
+  margin-left: 0;
   color: rgba(9, 30, 66, 1);
 }
 
 #lang-skills {
   display: flex;
   justify-content: space-around;
-  padding-top: 5px;
-  margin-top: 5px;
   list-style: none;
-  margin-right: 5rem;
-  padding-left: 8px;
-  margin-left: 20px;
+  padding: 0;
+  margin-left: -10px;
 }
 
 #css {
@@ -227,9 +215,10 @@ section p {
   line-height: 20px;
   letter-spacing: 0;
   text-align: left;
-  margin-left: 30px;
+  margin: 0;
   justify-content: center;
   margin-top: 0;
+  margin-left: 10px;
 }
 
 #html {
@@ -308,6 +297,7 @@ section p {
   letter-spacing: 0.03em;
   text-align: center;
   color: #fff;
+  margin-top: 22px;
 }
 
 #project-btn {
@@ -318,7 +308,7 @@ section p {
   align-items: center;
   padding: 12px;
   background: #ff6b00;
-  margin-left: 2rem;
+  margin: 0;
   border: none;
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -345,21 +335,20 @@ section p {
   background-image: url("images/Img\ Placeholder\ \(1\).svg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  padding-top: 84px;
 }
 
 #card {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 15% 15% 15% 15% 15%;
   padding-left: 24px;
   padding-right: 24px;
-  width: 100%;
+  grid-gap: 5%;
 }
 
 #placeholder-img-head {
-  padding-top: 5rem;
+  margin-left: 16px;
   height: 81px;
   width: 295px;
   font-family: Crete Round, sans-serif;
@@ -373,6 +362,8 @@ section p {
 }
 
 #palceholder-img-para {
+  margin-left: 16px;
+  margin-top: 12px;
   height: 87px;
   width: 295px;
   font-family: Inter, sans-serif;
@@ -385,10 +376,12 @@ section p {
 }
 
 .lang-skills {
+  padding: 0;
+  margin-top: 12px;
   display: flex;
   justify-content: flex-start;
   color: white;
-  margin-left: -2rem;
+  margin-left: 16px;
 }
 
 .html {
@@ -396,7 +389,6 @@ section p {
   color: white;
   align-items: center;
   padding: 10px 12px;
-  margin-left: 10px;
   width: 56px;
   height: 30px;
   display: flex;
@@ -449,17 +441,22 @@ section p {
   align-items: center;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 #about-me {
   background-image: url(images/illustration-about-me-mobile.svg);
   background-size: 150px;
   background-repeat: no-repeat;
-  margin-top: 8rem;
+  padding-top: 120px;
   background-color: #1c1a19;
-  width: 100%;
   background-position: right 0% bottom 0%;
-  padding-bottom: 12rem;
+  padding-bottom: 209px;
   padding-left: 24px;
   padding-right: 24px;
+  margin-top: 120px;
 }
 
 #lang-section {
@@ -467,7 +464,6 @@ section p {
   padding: 0 22px 6rem;
   padding-left: 24px;
   padding-right: 24px;
-  width: 100%;
 }
 
 #about-me-head {
@@ -480,7 +476,9 @@ section p {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-  padding-top: 8rem;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #about-me-para {
@@ -493,6 +491,9 @@ section p {
   letter-spacing: 0;
   text-align: left;
   color: #f4f5f7;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
 }
 
 #get-resume {
@@ -504,8 +505,6 @@ section p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  order: 2;
-  margin-left: 1rem;
   border: none;
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -514,6 +513,8 @@ section p {
   letter-spacing: 0.03em;
   text-align: center;
   color: white;
+  margin-left: 0;
+  margin-top: 24px;
 }
 
 #get-resume:hover {
@@ -524,7 +525,7 @@ section p {
 
 #languages {
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 122px;
   height: 24px;
   width: 164px;
   font-family: InaiMathi, sans-serif;
@@ -534,6 +535,22 @@ section p {
   letter-spacing: 0;
   text-align: left;
   color: #fff;
+  margin-left: 12px;
+}
+
+.frameworks {
+  align-items: center;
+  margin-top: 36px;
+  height: 24px;
+  width: 164px;
+  font-family: InaiMathi, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  margin-left: 12px;
 }
 
 .language-list-js {
@@ -546,8 +563,8 @@ section p {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
-  margin-left: 4rem;
-  margin-top: 1rem;
+  margin-left: 88px;
+  margin-top: 44px;
 }
 
 #language-list {
@@ -566,8 +583,8 @@ section p {
   letter-spacing: 0;
   text-align: center;
   color: #fff;
-  margin-top: 2rem;
-  margin-left: 2.5rem;
+  margin-top: 32px;
+  margin-left: 65px;
 }
 
 .language-list-html {
@@ -580,8 +597,8 @@ section p {
   letter-spacing: 0;
   text-align: center;
   color: white;
-  margin-top: 2rem;
-  margin-left: 4rem;
+  margin-top: 32px;
+  margin-left: 88px;
 }
 
 .language-list-css {
@@ -594,8 +611,8 @@ section p {
   letter-spacing: 0;
   text-align: center;
   color: #e5e5e5;
-  margin-top: 2rem;
-  margin-left: 4rem;
+  margin-top: 32px;
+  margin-left: 88px;
 }
 
 #shape {
@@ -603,22 +620,24 @@ section p {
 }
 
 body {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 #diamond-shape {
   background: #ff6b00;
-  margin-top: 6rem;
+  margin-top: 136px;
   height: 17.99999969194312px;
   width: 17.99999969194312px;
   transform: rotate(-45deg);
-  margin-left: 4rem;
+  margin-left: 86px;
 }
 
 .language-list-Bootstrap {
+  margin-top: 32px;
   height: 24px;
   width: 114px;
   font-family: Inter, sans-serif;
@@ -632,6 +651,7 @@ body {
 }
 
 .language-list-ruby-on-rails {
+  margin-top: 32px;
   height: 24px;
   width: 162px;
   font-family: Inter, sans-serif;
@@ -643,11 +663,11 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  margin-top: 2rem;
   margin-left: 4rem;
 }
 
 .language-list-RSPec {
+  margin-top: 32px;
   height: 24px;
   width: 114px;
   font-family: Inter, sans-serif;
@@ -659,11 +679,11 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  margin-top: 2rem;
   margin-left: 7rem;
 }
 
 .language-list-CapyBara {
+  margin-top: 32px;
   height: 24px;
   width: 114px;
   font-family: Inter, sans-serif;
@@ -675,11 +695,11 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  margin-top: 2rem;
   margin-left: 6rem;
 }
 
 .language-list-Selenium {
+  margin-top: 32px;
   height: 24px;
   width: 114px;
   font-family: Inter, sans-serif;
@@ -691,7 +711,6 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  margin-top: 2rem;
   margin-left: 6rem;
 }
 
@@ -699,7 +718,7 @@ body {
   width: 18px;
   height: 18px;
   background: #ff6b00;
-  margin-top: 6rem;
+  margin-top: 47px;
   margin-left: 4rem;
 }
 
@@ -715,7 +734,8 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  margin-top: 4rem;
+  margin-top: 44px;
+  margin-left: 12px;
 }
 
 #circle-shape {
@@ -723,7 +743,7 @@ body {
   width: 18px;
   background: #ff6b00;
   border-radius: 150px;
-  margin-top: 4rem;
+  margin-top: 47px;
   margin-left: 6rem;
 }
 
@@ -740,6 +760,7 @@ body {
   align-items: center;
   color: #fff;
   margin-left: 6rem;
+  margin-top: 44px;
 }
 
 .language-list-Github {
@@ -771,7 +792,7 @@ body {
   align-items: center;
   color: #fff;
   margin-top: 2rem;
-  margin-left: 6rem;
+  margin-left: 88px;
 }
 
 .language-list-Gitlab {
@@ -1187,6 +1208,7 @@ body {
   }
 
   #about-me-para {
+    margin-top: 24px;
     margin-left: 60px;
     height: 148px;
     width: 566px;
