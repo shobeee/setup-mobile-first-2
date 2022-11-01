@@ -180,7 +180,6 @@ section p {
   padding-top: 6rem;
 }
 
-
 #paragraph {
   font-family: Inter, sans-serif;
   font-size: 16px;
@@ -960,6 +959,7 @@ body {
   #card {
     display: none;
   }
+
   #desktop-card {
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -967,46 +967,48 @@ body {
     padding: 0 70px;
     row-gap: 2%;
   }
+
   body {
     border: 5px solid black;
   }
 
-  #desktop-card-1 { background-image: url(images/card-1.svg);
+  #desktop-card-1 {
+    background-image: url(images/card-1.svg);
     display: flex;
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
- 
- 
-
   }
-  #desktop-card-2 {display: flex;
+
+  #desktop-card-2 {
+    display: flex;
     flex-direction: column;
-  background-image: url(images/Img\ Placeholder-desktop-2.svg);
-  background-size: cover;
-  background-repeat: no-repeat  ;
-justify-content: flex-end;
-  padding-left: 16px;
-  padding-right: 16px;
-  background-size: cover;
-background-repeat: no-repeat;
-padding-top: 60%;
+    background-image: url(images/Img\ Placeholder-desktop-2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 60%;
   }
-  #heading-card-2 {
-font-family: Crete Round;
-font-size: 32px;
-font-weight: 400;
-line-height: 44px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
 
+  #heading-card-2 {
+    font-family: Crete Round, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #fff;
   }
+
   .lang-skills {
     margin-left: 0;
   }
-  #desktop-card-3 {display: flex;
+
+  #desktop-card-3 {
+    display: flex;
     flex-direction: column;
     background-image: url(images/card-3.svg);
     justify-content: flex-end;
@@ -1016,55 +1018,59 @@ color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   #heading-card-3 {
-    font-family: Crete Round;
+    font-family: Crete Round, sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
-    color: #FFFFFF;
+    color: #fff;
   }
-  #desktop-card {
 
+  .project-btn-desktop {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    bottom: 0;
+    background: #f55800;
+    border: none;
+    color: #fff;
   }
-  .project-btn-desktop {position: absolute;
-  top: 90%;
-  width: 100%;
-  bottom: 0;
-  background: #F55800;
-  border: none;
-  color:#FFF;
 
-  }
-  #desktop-card-4 {display: flex;
+  #desktop-card-4 {
+    display: flex;
     flex-direction: column;
     padding-left: 16px;
     padding-right: 24px;
-  background-image: url(images/card-4.svg);
-  justify-content: flex-end;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: url(images/card-4.svg);
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+
   #home-2 {
     padding-left: 70px;
     padding-right: 70px;
-
   }
+
   #home-2-desktop {
-    display: flex;
     flex-direction: row;
     display: grid;
     grid-template-columns: 49% 49%;
     column-gap: 1%;
   }
+
   #desktop-multipost {
     display: flex;
     flex-direction: column;
   }
+
   #img-placeholder {
     display: none;
   }
+
   #desktop-background {
     background-image: url(images/Img\ Placeholder.svg);
     background-size: 100% 100%;
@@ -1076,6 +1082,7 @@ color: #FFFFFF;
   #about-me-frame-desktop {
     display: none;
   }
+
   #desktop-card {
     display: none;
   }
