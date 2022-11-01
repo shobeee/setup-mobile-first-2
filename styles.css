@@ -147,7 +147,7 @@ section p {
   text-align: left;
   color: #1c1a19;
   align-items: center;
-  border-bottom: 1px solid rgb(225, 22, 22);
+  border-bottom: 1px solid black;
   padding-bottom: 30px;
   display: flex;
 }
@@ -331,7 +331,7 @@ section p {
 #card {
   margin-top: 2rem;
   display: grid;
-  grid-template-rows: 10% 10% 10% 10% 10%;
+  grid-template-rows: 15% 15% 15% 15% 15%;
   padding-left: 24px;
   padding-right: 24px;
   grid-gap: 5%;
