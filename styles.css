@@ -1271,6 +1271,27 @@ body {
     margin-left: 0.5%;
   }
 
+  #text-area {
+    display: none;
+  }
+
+  #desktop-text-area {
+    height: 90px;
+    width: 70%;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #3c3a39;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background: #fbf8f7;
+    border: none;
+    padding: 12px;
+  }
+
   #html {
     margin-left: 2%;
   }
@@ -1320,6 +1341,10 @@ body {
   }
 
   #letter-icon {
+    display: none;
+  }
+
+  #desktop-text-area {
     display: none;
   }
 }
