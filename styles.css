@@ -1149,7 +1149,7 @@ body {
     flex-direction: column;
     order: 0;
     margin-top: 4rem;
-    list-style: ;
+    list-style: none;
   }
 
   #home {
