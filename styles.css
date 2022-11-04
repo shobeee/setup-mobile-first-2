@@ -1009,6 +1009,13 @@ body {
     color: #fff;
   }
 
+  #nav-bar h1 {
+    transition: color 2s;
+      }
+      #nav-bar h1:hover {
+        color:gold;
+      }    
+      
   .project-btn-desktop {
     position: absolute;
     top: 90%;
