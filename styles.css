@@ -130,6 +130,7 @@ section p {
   margin-left: 0;
   margin-top: 22px;
   padding-left: 0;
+  list-style: none;
 }
 
 #github {
@@ -1080,10 +1081,6 @@ body {
     background-color: #262626;
   }
 
-  .language-list-js {
-    margin-top: 0;
-  }
-
   #square-shape {
     margin-top: 28%;
   }
@@ -1100,17 +1097,13 @@ body {
     margin-top: 23%;
   }
 
-  .language-list-Bootstrap {
-    margin-top: 0;
-  }
-
   .language-list-Codekit {
     margin-top: 0;
   }
 
   #language-list {
     padding: 0;
-    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   #form {
@@ -1156,6 +1149,7 @@ body {
     flex-direction: column;
     order: 0;
     margin-top: 4rem;
+    list-style: none;
   }
 
   #home {
@@ -1168,6 +1162,53 @@ body {
     column-gap: 10%;
     background-color: #1c1a19;
     background-position: right 0%;
+  }
+
+  .language-list-js {
+    margin-left: 88px;
+    margin-top: 0;
+  }
+
+  .language-list-Ruby {
+    margin-left: 40px;
+  }
+
+  .language-list-html {
+    margin-left: 60px;
+  }
+
+  .language-list-css {
+    margin-left: 60px;
+  }
+
+  .language-list-Bootstrap {
+    margin-left: 4rem;
+    margin-top: 0;
+  }
+
+  .language-list-ruby-on-rails {
+    margin-left: 70px;
+    margin-top: 38px;
+  }
+
+  .language-list-RSPec {
+    margin-left: 70px;
+  }
+
+  .language-list-CapyBara {
+    margin-left: 70px;
+  }
+
+  .language-list-Selenium {
+    margin-left: 70px;
+  }
+
+  .language-list-Codepen {
+    margin-left: 95px;
+  }
+
+  .language-list-Terminal {
+    margin-left: 95px;
   }
 
   #intro {
@@ -1271,6 +1312,27 @@ body {
     margin-left: 0.5%;
   }
 
+  #text-area {
+    display: none;
+  }
+
+  #desktop-text-area {
+    height: 90px;
+    width: 70%;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #3c3a39;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    background: #fbf8f7;
+    border: none;
+    padding: 12px;
+  }
+
   #html {
     margin-left: 2%;
   }
@@ -1320,6 +1382,10 @@ body {
   }
 
   #letter-icon {
+    display: none;
+  }
+
+  #desktop-text-area {
     display: none;
   }
 }
