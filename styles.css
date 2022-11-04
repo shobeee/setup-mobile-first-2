@@ -1080,9 +1080,7 @@ body {
     background-color: #262626;
   }
 
-  .language-list-js {
-    margin-top: 0;
-  }
+
 
   #square-shape {
     margin-top: 28%;
@@ -1100,17 +1098,13 @@ body {
     margin-top: 23%;
   }
 
-  .language-list-Bootstrap {
-    margin-top: 0;
-  }
-
   .language-list-Codekit {
     margin-top: 0;
   }
 
   #language-list {
     padding: 0;
-    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   #form {
@@ -1168,6 +1162,53 @@ body {
     column-gap: 10%;
     background-color: #1c1a19;
     background-position: right 0%;
+  }
+
+  .language-list-js {
+    margin-left: 88px;
+    margin-top: 0;
+  }
+
+  .language-list-Ruby {
+    margin-left: 40px;
+  }
+
+  .language-list-html {
+    margin-left: 60px;
+  }
+
+  .language-list-css {
+    margin-left: 60px;
+  }
+
+  .language-list-Bootstrap {
+    margin-left: 4rem;
+    margin-top: 0;
+  }
+
+  .language-list-ruby-on-rails {
+    margin-left: 70px;
+    margin-top: 38px;
+  }
+
+  .language-list-RSPec {
+    margin-left: 70px;
+  }
+
+  .language-list-CapyBara {
+    margin-left: 70px;
+  }
+
+  .language-list-Selenium {
+    margin-left: 70px;
+  }
+
+  .language-list-Codepen {
+    margin-left: 95px;
+  }
+
+  .language-list-Terminal {
+    margin-left: 95px;
   }
 
   #intro {
