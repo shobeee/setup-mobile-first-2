@@ -39,7 +39,7 @@ create .github/workflows folder in your first commit for the feature branch then
 
 ### Live Demo
 
-[coming soon]()
+https://shobeee.github.io/setup-mobile-first-2/
 
 ## 🤝 Contributing
 

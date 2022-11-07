@@ -1225,6 +1225,12 @@ body {
 
   #github {
     margin-left: 5px;
+    transition: 2s, transform 2s;
+  }
+
+  #github:hover {
+    margin-bottom: 2rem;
+    transform: rotate(180deg);
   }
 
   #menu {
@@ -1258,6 +1264,46 @@ body {
     color: #fff;
     margin-right: 1.5rem;
     margin-bottom: 4px;
+  }
+
+  #twitter {
+    margin-left: 5px;
+    transition: 2s, transform 2s;
+  }
+
+  #twitter:hover {
+    margin-bottom: 2rem;
+    transform: rotate(180deg);
+  }
+
+  #M {
+    margin-left: 5px;
+    transition: 2s, transform 2s;
+  }
+
+  #M:hover {
+    margin-bottom: 2rem;
+    transform: rotate(180deg);
+  }
+
+  #linkedin {
+    margin-left: 5px;
+    transition: 2s, transform 2s;
+  }
+
+  #linkedin:hover {
+    margin-bottom: 2rem;
+    transform: rotate(180deg);
+  }
+
+  #hand {
+    margin-left: 5px;
+    transition: 2s, transform 2s;
+  }
+
+  #hand:hover {
+    margin-bottom: 2rem;
+    transform: rotate(180deg);
   }
 
   #about-header {
@@ -1370,30 +1416,30 @@ body {
   #img-placehokder {
     width: 100%;
   }
-}
 
-@media (max-width: 768px) {
-  #about-me-frame-desktop {
-    display: none;
-  }
+  @media (max-width: 768px) {
+    #about-me-frame-desktop {
+      display: none;
+    }
 
-  #portfolio {
-    display: none;
-  }
+    #portfolio {
+      display: none;
+    }
 
-  #about-header {
-    display: none;
-  }
+    #about-header {
+      display: none;
+    }
 
-  #contact-header {
-    display: none;
-  }
+    #contact-header {
+      display: none;
+    }
 
-  #letter-icon {
-    display: none;
-  }
+    #letter-icon {
+      display: none;
+    }
 
-  #desktop-text-area {
-    display: none;
+    #desktop-text-area {
+      display: none;
+    }
   }
 }
