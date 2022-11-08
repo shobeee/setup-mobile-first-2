@@ -1407,31 +1407,31 @@ body {
 
   #img-placehokder {
     width: 100%;
-  }}
+  }
+}
 
-  @media (max-width: 768px) {
-    #about-me-frame-desktop {
-      display: none;
-    }
+@media (max-width: 768px) {
+  #about-me-frame-desktop {
+    display: none;
+  }
 
-    #portfolio {
-      display: none;
-    }
+  #portfolio {
+    display: none;
+  }
 
-    #about-header {
-      display: none;
-    }
+  #about-header {
+    display: none;
+  }
 
-    #contact-header {
-      display: none;
-    }
+  #contact-header {
+    display: none;
+  }
 
-    #letter-icon {
-      display: none;
-    }
+  #letter-icon {
+    display: none;
+  }
 
-    #desktop-text-area {
-      display: none;
-    }
+  #desktop-text-area {
+    display: none;
   }
 }
