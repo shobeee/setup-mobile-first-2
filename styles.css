@@ -9,14 +9,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  color: #f55800;
+}
+
+h3 {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0;
-  text-align: center;
   color: white;
-  margin-left: 20px;
 }
 
 header {
@@ -68,9 +75,7 @@ header {
 
 section h1 {
   font-family: Crete Round, sans-serif;
-  font-size: 50px;
   font-weight: 400;
-  line-height: 64px;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   margin: 0;
@@ -89,14 +94,14 @@ h2 {
 }
 
 section h2 {
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
+  font-family: 'Crete Round', sans-serif;
   letter-spacing: 0;
   text-align: left;
-  color: #fff5e1;
+  color: #f55800;
   margin: 12 0 0 0;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
 }
 
 section p {
@@ -851,6 +856,20 @@ body {
   border-left-style: hidden;
   padding-bottom: 10px;
   border-bottom: 1px solid  #dbd8d7;
+}
+
+#name {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2%;
 }
 
 #form {
