@@ -21,6 +21,7 @@
   margin-bottom: 14px;
   position: relative;
   top: 0;
+  transition: color 2s;
 }
 
 #nav-bar {
@@ -1105,8 +1106,6 @@ body {
     text-align: left;
     color: #fff;
   }
-
-
 
   .project-btn-desktop {
     position: absolute;
