@@ -21,6 +21,7 @@
   margin-bottom: 14px;
   position: relative;
   top: 0;
+  transition: color 2s;
 }
 
 #nav-bar {
@@ -1104,10 +1105,6 @@ body {
     letter-spacing: 0;
     text-align: left;
     color: #fff;
-  }
-
-  #nav-bar > a {
-    transition: color 2s;
   }
 
   #nav-bar > a:hover {
