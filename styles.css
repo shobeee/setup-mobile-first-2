@@ -1106,13 +1106,7 @@ body {
     color: #fff;
   }
 
-  #nav-bar > a {
-    transition: color 2s;
-  }
 
-  #nav-bar > a:hover {
-    color: gold;
-  }
 
   .project-btn-desktop {
     position: absolute;
