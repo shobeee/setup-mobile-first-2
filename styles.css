@@ -1516,33 +1516,6 @@ body {
   }
 }
 
-
-/*
-    #about-me-frame-desktop {
-      display: none;
-    }
-
-    #portfolio {
-      display: none;
-    }
-
-    #about-header {
-      display: none;
-    }
-
-    #contact-header {
-      display: none;
-    }
-
-
-
-
-    #desktop-text-area {
-      display: none;
-    }
-  }
-} */
-
 @media (max-width: 768px) {
   #header-desktop {
     width: 0;
