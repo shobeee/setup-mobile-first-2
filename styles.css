@@ -1107,10 +1107,6 @@ body {
     color: #fff;
   }
 
-  #nav-bar > a:hover {
-    color: gold;
-  }
-
   .project-btn-desktop {
     position: absolute;
     top: 90%;
