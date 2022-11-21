@@ -22,6 +22,7 @@
   position: relative;
   top: 0;
   transition: color 2s;
+<<<<<<< HEAD
 }
 
 #pop-img-para {
@@ -114,6 +115,8 @@
   background: #ff6b00;
   color: white;
   border: none;
+=======
+>>>>>>> 86ea5824a44413a2572f52398357f693c61d9a6e
 }
 
 #nav-bar {
