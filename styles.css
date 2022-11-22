@@ -36,9 +36,12 @@
   position: fixed;
   width: 90%;
   height: 100vh;
-  top: 10%;
+  top: 5%;
   background: #fff;
   padding: 24px;
+  right: 1%;
+  left: 1%;
+  bottom: 5%;
 }
 
 #pop-undordered-list {
@@ -124,8 +127,6 @@
 }
 
 .pop-button2 {
-  width: 99px;
-  height: 24px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
