@@ -52,13 +52,17 @@ about.addEventListener('click', () => {
 contact.addEventListener('click', () => {
   menuDiv.classList.toggle('active');
 });
+const containerDiv = document.createElement('div');
+const remove = document.createElement('i');
+remove.classList.add('material-symbols-outlined');
+remove.classList.add('pop-remove');
+remove.innerHTML = 'close';
 const popUpBtn = document.getElementById('project-btn');
 popUpBtn.onclick = function popUp() {
   const unorderedList = document.createElement('ul');
   const list1 = document.createElement('li');
   const list2 = document.createElement('li');
   const list3 = document.createElement('li');
-  const containerDiv = document.createElement('div');
   const para = document.createElement('p');
   const buttonDiv = document.createElement('div');
   const button1 = document.createElement('button');
@@ -97,7 +101,7 @@ popUpBtn.onclick = function popUp() {
   const h1 = document.getElementById('Multi-post');
   const popUpDiv = document.createElement('div');
   popUpDiv.appendChild(h1);
-  popUpDiv.appendChild(closeIcon);
+  popUpDiv.appendChild(remove);
   popUpDiv.id = 'pop-up';
   containerDiv.appendChild(popUpDiv);
   containerDiv.appendChild(unorderedList);
@@ -105,4 +109,8 @@ popUpBtn.onclick = function popUp() {
   containerDiv.appendChild(para);
   containerDiv.appendChild(buttonDiv);
   home2.appendChild(containerDiv);
+  buttonDiv.remove();
 };
+remove.addEventListener('click', () => {
+  containerDiv.remove();
+});
