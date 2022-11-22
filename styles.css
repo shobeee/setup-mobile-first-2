@@ -34,19 +34,19 @@
   flex-direction: column;
   z-index: 2;
   position: fixed;
-  width: 90%;
-  height: 100vh;
+  width: 70%;
+  height: 88vh;
   top: 5%;
   background: #fff;
   padding: 24px;
   right: 1%;
-  left: 1%;
+  left: 10%;
   bottom: 5%;
 }
 
 #pop-undordered-list {
   display: flex;
-  gap: 24px;
+  gap: 12px;
   padding-left: 0;
 }
 
@@ -100,7 +100,7 @@
 }
 
 #pop-button-div {
-  gap: 24px;
+  gap: 12px;
   display: flex;
 }
 
@@ -166,10 +166,10 @@
 
 #close-white {
   color: rgba(103, 121, 142, 1);
-  font-size: 44px;
+  font-size: 36px;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 4%;
+  right: 0%;
 }
 
 #nav-bar {
@@ -388,7 +388,6 @@ section h2 {
   letter-spacing: 0;
   text-align: left;
   color: #fff5e1;
-  margin: 12 0 0 0;
 }
 
 section p {
@@ -400,7 +399,6 @@ section p {
   text-align: left;
   color: #fff;
   padding-right: 40px;
-  margin: 12 0 0 0;
 }
 
 #social-media-black {
@@ -910,10 +908,6 @@ body {
   flex-direction: column;
 }
 
-body.active {
-  background-color: rgb(0, 0, 0, 1);
-}
-
 #diamond-shape {
   background: #ff6b00;
   margin-top: 136px;
@@ -1278,6 +1272,10 @@ body.active {
     flex-direction: column;
   }
 
+  #menuDiv {
+    display: none;
+  }
+
   #pop-up-bg {
     display: none;
   }
@@ -1517,7 +1515,6 @@ body.active {
     display: grid;
     background-image: url(images/desktop-main.svg);
     background-size: 40%;
-    padding-left: px;
     padding-right: 50%;
     grid-template-columns: 10% 80%;
     column-gap: 10%;
