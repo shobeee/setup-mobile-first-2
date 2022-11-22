@@ -909,6 +909,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+body.active {
+  background-color: rgb(0, 0, 0,1);
+}
 
 #diamond-shape {
   background: #ff6b00;

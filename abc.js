@@ -10,7 +10,7 @@ const anchorTagA = document.createElement('a');
 anchorTagA.innerHTML = 'Portfolio';
 const anchorTagB = document.createElement('a');
 const anchorTagC = document.createElement('a');
-anchorTagB.innerHTML = 'About ';
+anchorTagB.innerHTML = 'About';
 anchorTagC.innerHTML = 'Contact';
 anchorTagA.classList.add('menuListA');
 anchorTagB.classList.add('menuListB');
@@ -53,6 +53,7 @@ contact.addEventListener('click', () => {
   menuDiv.classList.toggle('active');
 });
 const popUpBtn = document.getElementById('project-btn');
+const body = document.getElementById('body');
 popUpBtn.onclick = function popUp() {
   const unorderedList = document.createElement('ul');
   const list1 = document.createElement('li');
@@ -105,4 +106,5 @@ popUpBtn.onclick = function popUp() {
   containerDiv.appendChild(para);
   containerDiv.appendChild(buttonDiv);
   home2.appendChild(containerDiv);
+  body.classList.toggle('active');
 };
