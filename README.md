@@ -6,7 +6,7 @@
 
 ## Built With
 
-Html & Css
+Html,Css and javaScript
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Here is a live demo for my portfolio project website.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Abu-Tarak is also contributed to this project.
 
 Feel free to check the [issues page](../../issues/).
 
