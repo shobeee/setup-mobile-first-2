@@ -43,6 +43,7 @@
   left: 10%;
   bottom: 5%;
 }
+
 .material-symbols-outlined {
   color: white;
   font-size: 36px;
@@ -176,21 +177,19 @@
   top: 4%;
   right: 2%;
 }
+
 .pop-remove {
   color: rgba(103, 121, 142, 1);
   font-size: 36px;
   position: absolute;
   top: 4%;
   right: 2%;
-
 }
 
 #nav-bar {
   display: flex;
   justify-content: space-between;
 }
-
-
 
 li {
   list-style: none;

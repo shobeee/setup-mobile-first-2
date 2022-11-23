@@ -52,7 +52,6 @@ about.addEventListener('click', () => {
 contact.addEventListener('click', () => {
   menuDiv.classList.toggle('active');
 });
-const containerDiv = document.createElement('div');
 const remove = document.createElement('i');
 remove.classList.add('material-symbols-outlined');
 remove.classList.add('pop-remove');
@@ -63,6 +62,7 @@ popUpBtn.onclick = function popUp() {
   const list1 = document.createElement('li');
   const list2 = document.createElement('li');
   const list3 = document.createElement('li');
+  const containerDiv = document.createElement('div');
   const para = document.createElement('p');
   const buttonDiv = document.createElement('div');
   const button1 = document.createElement('button');
@@ -109,8 +109,4 @@ popUpBtn.onclick = function popUp() {
   containerDiv.appendChild(para);
   containerDiv.appendChild(buttonDiv);
   home2.appendChild(containerDiv);
-  buttonDiv.remove();
 };
-remove.addEventListener('click', () => {
-  containerDiv.remove();
-});
