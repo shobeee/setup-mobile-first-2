@@ -34,14 +34,19 @@
   flex-direction: column;
   z-index: 2;
   position: fixed;
-  width: 70%;
+  width: 72%;
   height: 88vh;
-  top: 5%;
+  top: 3%;
   background: #fff;
   padding: 24px;
-  right: 1%;
-  left: 10%;
-  bottom: 5%;
+  right: 7%;
+  left: 7%;
+  bottom: 7%;
+  transition: 0.5s ease-in-out;
+}
+
+#pop-container.active {
+  visibility: hidden;
 }
 
 .material-symbols-outlined {
@@ -1252,6 +1257,20 @@ body {
 
   #menu-1 {
     display: none;
+  }
+
+  #pop-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  #pop-img {
+    width: 100%;
+  }
+
+  #desktop-bottom {
+    margin-top: 9rem;
   }
 
   #desktop-card {
