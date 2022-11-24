@@ -194,7 +194,7 @@ form.addEventListener('submit', (event) => {
     error.textContent = 'The form has been submitted';
     error.className = 'delievered';
   }
-  body.addEventListener('click', ()=> {
+  body.addEventListener('click', () => {
     error.textContent = '';
-  })
+  });
 });
