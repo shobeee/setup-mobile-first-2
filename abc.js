@@ -167,3 +167,31 @@ projectButtonDesktop.addEventListener('click', () => {
   containerDiv.classList.toggle('active');
   blur.classList.toggle('active');
 });
+const form = document.getElementById('input-form');
+const email = document.getElementById('mail');
+const error = document.querySelector('.error');
+const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+email.addEventListener('input', () => {
+  const valid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (valid) {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  } else {
+    email.className = 'invalid';
+  }
+});
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const valid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (!valid) {
+    email.className = 'invalid';
+    error.textContent = 'Form is not sent Type email in lowercase please and try again';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  }
+});

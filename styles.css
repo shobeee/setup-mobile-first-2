@@ -24,6 +24,57 @@
   transition: color 2s;
 }
 
+.invalid {
+  background-color: pink;
+  width: 70%;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #979493;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.valid {
+  width: 70%;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #979493;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.error {
+  color: #979493;
+  width: 54px;
+  margin-top: 2rem;
+}
+
+.active {
+  color: red;
+  height: 100px;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
 #pop-up {
   display: flex;
   justify-content: space-between;
