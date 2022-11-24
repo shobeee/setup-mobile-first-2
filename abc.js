@@ -1,6 +1,5 @@
 const menu = document.querySelector('.material-symbols-outlined');
 const home = document.getElementById('home');
-const home2 = document.getElementById('home-2');
 const closeIcon = document.createElement('i');
 const headerDesktop = document.createElement('ul');
 const portfolio = document.createElement('li');
@@ -52,6 +51,15 @@ about.addEventListener('click', () => {
 contact.addEventListener('click', () => {
   menuDiv.classList.toggle('active');
 });
+const projectButtonDesktop = document.querySelector('.project-btn-desktop');
+const popUpButtons2 = document.querySelector('.project-btn-2');
+const popUpButtons3 = document.querySelector('.project-btn-3');
+const popUpButtons4 = document.querySelector('.project-btn-4');
+const popUpButtons5 = document.querySelector('.project-btn-5');
+const imgparaContainer = document.createElement('div');
+imgparaContainer.id = 'imgparaContainer';
+const imgContainer = document.createElement('div');
+const projectBtn = document.querySelector('.project-btn');
 const desktopBottom = document.createElement('div');
 const desktopContainer = document.createElement('div');
 desktopContainer.id = 'desktop-pop-container';
@@ -76,9 +84,14 @@ github.id = 'github-img';
 github.setAttribute('src', 'images/github.svg');
 button2.appendChild(github);
 anchor.id = 'achor-img';
+const button1Para = document.createElement('p');
+button1Para.innerHTML = 'See Live';
+const button2Para = document.createElement('p');
+button2Para.innerHTML = 'See Source';
+button1.appendChild(button1Para);
+button2.appendChild(button2Para);
 button1.appendChild(anchor);
-button1.innerHTML = 'See Live';
-button2.innerHTML = 'See Source';
+button2.appendChild(github);
 buttonDiv.id = 'pop-button-div';
 buttonDiv.appendChild(button1);
 buttonDiv.appendChild(button2);
@@ -101,22 +114,87 @@ const img = document.createElement('img');
 img.setAttribute('src', 'images/Snapshoot portfolio.svg');
 img.id = 'pop-img';
 const h1 = document.getElementById('Multi-post');
+const h2 = document.createElement('h2');
+h2.id = 'pop-heading2';
+h2.innerHTML = 'Keeping track of hundreds  of components website';
 const popUpDiv = document.createElement('div');
 desktopContainer.appendChild(popUpDiv);
 desktopContainer.appendChild(unorderedList);
-desktopContainer.appendChild(img);
+imgContainer.appendChild(img);
 desktopBottom.appendChild(para);
 desktopBottom.appendChild(buttonDiv);
 desktopBottom.id = 'desktop-bottom';
 popUpDiv.appendChild(h1);
+popUpDiv.appendChild(h2);
 popUpDiv.appendChild(remove);
 popUpDiv.id = 'pop-up';
 containerDiv.appendChild(desktopContainer);
-containerDiv.appendChild(desktopBottom);
-
+imgparaContainer.appendChild(imgContainer);
+imgparaContainer.appendChild(desktopBottom);
+containerDiv.appendChild(imgparaContainer);
+const body = document.getElementById('body');
+body.appendChild(containerDiv);
+const blur = document.getElementById('blur');
 popUpBtn.addEventListener('click', () => {
-  home2.appendChild(containerDiv);
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+projectBtn.addEventListener('click', () => {
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
 });
 remove.addEventListener('click', () => {
-  containerDiv.remove();
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+popUpButtons2.addEventListener('click', () => {
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+popUpButtons3.addEventListener('click', () => {
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+popUpButtons4.addEventListener('click', () => {
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+popUpButtons5.addEventListener('click', () => {
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+projectButtonDesktop.addEventListener('click', () => {
+  containerDiv.classList.toggle('active');
+  blur.classList.toggle('active');
+});
+const form = document.getElementById('input-form');
+const email = document.getElementById('mail');
+const error = document.querySelector('.error');
+const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+email.addEventListener('input', () => {
+  const valid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (valid) {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  } else {
+    email.className = 'invalid';
+  }
+});
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const valid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (!valid) {
+    email.className = 'invalid';
+    error.textContent = 'Form is not sent Type email in lowercase please and try again';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = 'The form has been submitted';
+    error.className = 'delievered';
+  }
+  body.addEventListener('click', ()=> {
+    error.textContent = '';
+  })
 });
