@@ -24,6 +24,11 @@
   transition: color 2s;
 }
 
+.delievered {
+  color: green;
+  font-size: 18px;
+}
+
 .invalid {
   background-color: pink;
   width: 70%;

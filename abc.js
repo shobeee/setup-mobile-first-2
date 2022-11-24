@@ -191,7 +191,10 @@ form.addEventListener('submit', (event) => {
     error.className = 'error active';
   } else {
     email.className = 'valid';
-    error.textContent = '';
-    error.className = 'error';
+    error.textContent = 'The form has been submitted';
+    error.className = 'delievered';
   }
+  body.addEventListener('click', ()=> {
+    error.textContent = '';
+  })
 });
