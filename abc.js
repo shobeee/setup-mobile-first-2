@@ -183,12 +183,12 @@ email.addEventListener('input', () => {
   }
 });
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
   const valid = email.value.length === 0 || emailRegExp.test(email.value);
   if (!valid) {
     email.className = 'invalid';
     error.textContent = 'Form is not sent Type email in lowercase please and try again';
     error.className = 'error active';
+    event.preventDefault();
   } else {
     email.className = 'valid';
     error.textContent = 'The form has been submitted';
