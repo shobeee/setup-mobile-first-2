@@ -1646,8 +1646,6 @@ body {
   }
 
   #form {
-    padding-left: 70px;
-    padding-right: 70px;
     display: flex;
     column-gap: 5%;
     align-items: center;
@@ -1907,10 +1905,6 @@ body {
   #lang-skills {
     justify-content: flex-start;
     margin-left: 0.5%;
-  }
-
-  #text-area {
-    display: none;
   }
 
   #desktop-text-area {

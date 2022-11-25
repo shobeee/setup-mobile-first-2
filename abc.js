@@ -180,10 +180,13 @@ email.addEventListener('input', () => {
     error.className = 'error';
   } else {
     email.className = 'invalid';
+    error.textContent = 'please type the valid email address or try to use lowercase';
+    error.className = 'active';
   }
 });
 form.addEventListener('submit', (event) => {
   const valid = email.value.length === 0 || emailRegExp.test(email.value);
+
   if (!valid) {
     email.className = 'invalid';
     error.textContent = 'Form is not sent Type email in lowercase please and try again';
