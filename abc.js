@@ -168,32 +168,32 @@ projectButtonDesktop.addEventListener('click', () => {
   blur.classList.toggle('active');
 });
 const form = document.getElementById('input-form');
-const email = document.getElementById('mail');
+const email1 = document.getElementById('mail');
 const error = document.querySelector('.error');
 const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
 
-email.addEventListener('input', () => {
-  const valid = email.value.length === 0 || emailRegExp.test(email.value);
+email1.addEventListener('input', () => {
+  const valid = email1.value.length === 0 || emailRegExp.test(email1.value);
   if (valid) {
-    email.className = 'valid';
+    email1.className = 'valid';
     error.textContent = '';
     error.className = 'error';
   } else {
-    email.className = 'invalid';
+    email1.className = 'invalid';
     error.textContent = 'please type the valid email address or try to use lowercase';
     error.className = 'active';
   }
 });
 form.addEventListener('submit', (event) => {
-  const valid = email.value.length === 0 || emailRegExp.test(email.value);
+  const valid = email1.value.length === 0 || emailRegExp.test(email1.value);
 
   if (!valid) {
-    email.className = 'invalid';
+    email1.className = 'invalid';
     error.textContent = 'Form is not sent Type email in lowercase please and try again';
     error.className = 'error active';
     event.preventDefault();
   } else {
-    email.className = 'valid';
+    email1.className = 'valid';
     error.textContent = 'The form has been submitted';
     error.className = 'delievered';
   }
@@ -201,3 +201,35 @@ form.addEventListener('submit', (event) => {
     error.textContent = '';
   });
 });
+const fullname = document.querySelector('.name');
+const email = document.getElementById('mail');
+const text = document.getElementById('text-area');
+const formData = {
+  userName: '', userEmail: '', text: '',
+};
+function setStyles() {
+  if (localStorage.getItem('formData') === null) {
+    formData.userName = '';
+    formData.userEmail = '';
+    formData.text = '';
+  } else {
+    const data = JSON.parse(localStorage.getItem('formData'));
+    formData.userName = data.userName;
+    formData.userEmail = data.userEmail;
+    formData.text = data.text;
+    form.userName.value = formData.userName;
+    form.userEmail.value = formData.userEmail;
+    form.text.value = formData.text;
+  }
+}
+function populateStorage() {
+  formData.userName = form.userName.value;
+  formData.userEmail = form.userEmail.value;
+  formData.text = form.text.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+  setStyles();
+}
+setStyles();
+fullname.onchange = populateStorage;
+email.onchange = populateStorage;
+text.onchange = populateStorage;
