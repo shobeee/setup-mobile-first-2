@@ -47,35 +47,6 @@ After you're finished please remove all the comments and instructions!
 
 **[My Portfolio]** is a..project in which i have used different techs to build my own portfolio and to demonstrate my own skills
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack">git hub and git</a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
@@ -122,7 +93,7 @@ Example commands:
 --->
 
 ### Install
-
+install javascript to run this project on the code editor
 Install this project with:
 
 <!--
@@ -134,18 +105,6 @@ Example command:
 ```
 --->
 
-### Usage
-
-
-### Run tests
-
-To run tests, run the following command:
-
-
-### Deployment
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
